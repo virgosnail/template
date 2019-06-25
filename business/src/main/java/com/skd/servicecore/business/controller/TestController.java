@@ -21,7 +21,7 @@ import org.springframework.web.client.RestTemplate;
 @Slf4j
 @Api(value = "DemoService")
 @RestController
-@RequestMapping(produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+@RequestMapping(value = "api/v1/demo", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 public class TestController implements DemoService {
 
     @Autowired

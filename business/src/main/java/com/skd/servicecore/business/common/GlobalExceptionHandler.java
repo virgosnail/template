@@ -1,6 +1,8 @@
 package com.skd.servicecore.business.common;
 
 
+import com.skd.servicecore.business.common.GlobalException;
+import com.skd.servicecore.business.common.ResponseResult;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.validation.ObjectError;
@@ -33,12 +35,12 @@ public class GlobalExceptionHandler {
      * @return 返回异常信息
      */
     @ExceptionHandler(Exception.class)
-    public ResponseResult handleException(Exception e, HttpServletRequest request, HttpServletResponse response) {
+    public GlobalException handleException(Exception e, HttpServletRequest request, HttpServletResponse response) {
 
-        ResponseResult result = new ResponseResult();
-        result.setCode(500);
-        result.setErrorInfo(e.toString());
-        return result;
+        GlobalException exception = new GlobalException();
+        exception.setErrorCode(500);
+        exception.setErrorInfo(e.toString());
+        return exception;
     }
 
 }

@@ -1,5 +1,6 @@
 package com.skd.servicecore.business.config;
 
+import com.skd.servicecore.business.common.GlobalException;
 import com.skd.servicecore.business.common.ResponseResult;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.MethodParameter;
@@ -28,8 +29,9 @@ public class ResponseConfig implements ResponseBodyAdvice<Object> {
     @Override
     public Object beforeBodyWrite(Object body, MethodParameter methodParameter, MediaType mediaType, Class<? extends HttpMessageConverter<?>> aClass, ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
         ResponseResult result = new ResponseResult();
-        if (null == body){
-            result.setCode(200);
+        if (body instanceof GlobalException){
+            result.setCode(((GlobalException) body).getErrorCode());
+            result.setErrorInfo(((GlobalException) body).getErrorInfo());
         } else {
             result.setCode(200);
             result.setData(body.toString());

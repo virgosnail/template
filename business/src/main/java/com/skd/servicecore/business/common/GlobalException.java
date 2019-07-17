@@ -8,8 +8,12 @@ import lombok.Data;
  * @Date: 2019/7/14 17:48
  */
 @Data
-public class GlobalException {
+public class GlobalException extends RuntimeException{
 
+    public GlobalException(Integer errorCode,String errorInfo){
+        this.errorCode = errorCode;
+        this.errorInfo = errorInfo;
+    }
     /**
      * 错误码
      */

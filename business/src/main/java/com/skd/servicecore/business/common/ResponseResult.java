@@ -8,10 +8,10 @@ import lombok.Data;
  * @Date: 2019/6/25 14:25
  */
 @Data
-public class ResponseResult {
+public class ResponseResult <D> {
 
     private Integer code;
-    private Object data;
+    private D data;
     private String errorInfo;
 
 }

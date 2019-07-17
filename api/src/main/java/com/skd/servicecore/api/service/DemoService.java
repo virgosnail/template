@@ -17,4 +17,10 @@ public interface DemoService {
 
     @RequestMapping(value = "api/v1/demo/hello",method = RequestMethod.POST)
     String hello();
+
+    @RequestMapping(value = "api/v1/demo/real/ping",method = RequestMethod.GET)
+    String realPing();
+
+    @RequestMapping(value = "api/v1/demo/real/hello",method = RequestMethod.POST)
+    String realHello();
 }

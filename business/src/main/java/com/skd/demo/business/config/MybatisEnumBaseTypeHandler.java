@@ -1,4 +1,4 @@
-package com.skd.servicecore.business.config;
+package com.skd.demo.business.config;
 
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;

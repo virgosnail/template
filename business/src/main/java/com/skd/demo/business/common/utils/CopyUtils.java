@@ -1,4 +1,4 @@
-package com.skd.servicecore.business.common.utils;
+package com.skd.demo.business.common.utils;
 
 import org.springframework.beans.BeanWrapperImpl;
 

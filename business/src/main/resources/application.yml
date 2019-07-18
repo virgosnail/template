@@ -1,5 +1,5 @@
 server:
-  port: 2008
+  port: 20001
 # eureka config
 eureka:
   instance:

@@ -1,4 +1,4 @@
-package com.skd.servicecore.business;
+package com.skd.demo.business;
 
 import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
@@ -17,8 +17,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @author Mitol
  * @version 1.0.0
  */
-@MapperScan("com.skd.servicecore.business.dao")
-//@EnableFeignClients(basePackageClasses = {DemoTwoService.class}) FIXME 引入其他服务的接口定义
+@MapperScan("com.skd.demo.business.dao")
+//@EnableFeignClients(basePackageClasses = {DemoService.class})
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableTransactionManagement
@@ -27,6 +27,6 @@ public class Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
-        log.info("service start success");
+        log.info("service demo start success");
     }
 }

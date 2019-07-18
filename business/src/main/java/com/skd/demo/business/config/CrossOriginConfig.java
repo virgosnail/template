@@ -1,4 +1,4 @@
-package com.skd.servicecore.business.config;
+package com.skd.demo.business.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

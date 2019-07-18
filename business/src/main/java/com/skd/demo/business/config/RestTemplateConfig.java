@@ -1,11 +1,11 @@
-package com.skd.servicecore.business.config;
+package com.skd.demo.business.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @Describe:
+ * @Describe: HTTP 请求模板配置
  * @Author: chenfan
  * @Date: 2019/6/25 13:47
  */

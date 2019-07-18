@@ -1,4 +1,4 @@
-package com.skd.servicecore.business.common.utils;
+package com.skd.demo.business.common.utils;
 
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;

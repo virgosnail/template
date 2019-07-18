@@ -1,4 +1,4 @@
-package com.skd.servicecore.business.config;
+package com.skd.demo.business.config;
 
 import com.baomidou.mybatisplus.plugins.PaginationInterceptor;
 import org.springframework.context.annotation.Bean;

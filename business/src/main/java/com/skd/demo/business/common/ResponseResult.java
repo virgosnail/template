@@ -1,6 +1,8 @@
-package com.skd.servicecore.business.common;
+package com.skd.demo.business.common;
 
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * @Describe:
@@ -8,7 +10,7 @@ import lombok.Data;
  * @Date: 2019/6/25 14:25
  */
 @Data
-public class ResponseResult <D> {
+public class ResponseResult <D> implements Serializable {
 
     private Integer code;
     private D data;

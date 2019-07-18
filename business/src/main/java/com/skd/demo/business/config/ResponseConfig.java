@@ -1,9 +1,9 @@
-package com.skd.servicecore.business.config;
+package com.skd.demo.business.config;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.skd.servicecore.business.common.GlobalException;
-import com.skd.servicecore.business.common.ResponseResult;
+import com.skd.demo.business.common.GlobalException;
+import com.skd.demo.business.common.ResponseResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

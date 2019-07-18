@@ -1,4 +1,4 @@
-package com.skd.servicecore.business.common;
+package com.skd.demo.business.common;
 
 import lombok.Data;
 
@@ -7,13 +7,17 @@ import lombok.Data;
  * @Author: virgosnail
  * @Date: 2019/7/14 17:48
  */
-@Data
-public class GlobalException extends RuntimeException{
 
-    public GlobalException(Integer errorCode,String errorInfo){
+@Data
+public class GlobalException extends RuntimeException {
+
+    public GlobalException(){}
+
+    public GlobalException(Integer errorCode, String errorInfo) {
         this.errorCode = errorCode;
         this.errorInfo = errorInfo;
     }
+
     /**
      * 错误码
      */
@@ -25,5 +29,5 @@ public class GlobalException extends RuntimeException{
     private String errorInfo;
 
 
-
 }
+

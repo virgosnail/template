@@ -1,8 +1,6 @@
-package com.skd.servicecore.business.common;
+package com.skd.demo.business.common;
 
 
-import com.skd.servicecore.business.common.GlobalException;
-import com.skd.servicecore.business.common.ResponseResult;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.validation.ObjectError;

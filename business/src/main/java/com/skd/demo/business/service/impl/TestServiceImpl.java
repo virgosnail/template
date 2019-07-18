@@ -1,6 +1,6 @@
-package com.skd.servicecore.business.service.impl;
+package com.skd.demo.business.service.impl;
 
-import com.skd.servicecore.business.service.TestService;
+import com.skd.demo.business.service.TestService;
 
 /**
  * @Describe:

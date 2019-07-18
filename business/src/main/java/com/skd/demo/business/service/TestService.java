@@ -1,4 +1,4 @@
-package com.skd.servicecore.business.service;
+package com.skd.demo.business.service;
 
 /**
  * @Describe:
